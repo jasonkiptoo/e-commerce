@@ -1,7 +1,7 @@
 <template>
-   <NuxtLayout>
+   <NuxtLayout>  </NuxtLayout>
     ks
-   </NuxtLayout>
+ 
 </template>
 
 <script setup>

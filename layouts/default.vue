@@ -8,12 +8,12 @@
 
     </header>
    <header class="flex  mx-auto w-full content-center bg-green-400">
-       <ul class="grid grid-cols-6 gap-4 h-14 container mx-auto ">
+       <ul class="grid grid-cols-6 gap-4 h-14 container mx-auto items-center ">
        <NuxtLink to="/">BeeShop</NuxtLink>
-    <li>Home</li>
-    <li>Products</li>
-    <li>About</li>
-    <li>Contact us</li>
+    <li> <NuxtLink to="/home">Home</NuxtLink></li>
+    <li> <NuxtLink to="/products">Products</NuxtLink></li>
+    <li> <NuxtLink to="/about">About</NuxtLink></li>
+    <li> <NuxtLink to="/contact">Contact Us</NuxtLink></li>
 
 <li class="">
 <InputGroup>
@@ -26,6 +26,7 @@
 
    
 </header>
+<slot/>
 </template>
 
 <script setup>
@@ -33,6 +34,10 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+.router-link-exact-active{
+    color: brown;
+    font-weight: bold;
+}
 
 </style>
