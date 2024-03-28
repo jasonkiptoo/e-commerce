@@ -179,12 +179,22 @@
             <p>Option Name</p>
             <v-text-field label="name" variant="outlined"></v-text-field>
         </v-col>
-        <v-col class="d-fle px-8 py-8">
-            <p>Option Size</p>
-            <v-text-field label="size" variant="outlined"></v-text-field>
-        </v-col>
         
-      </v-row>
+    </v-row>
+  
+    <v-row class="">
+        <v-col class="">
+            <p>Option Values</p>
+
+            <v-col class="d-flex justify-center align-center">
+
+                <v-btn >add</v-btn>
+                <v-text-field label="size" variant="outlined"></v-text-field>
+                <v-btn>add</v-btn>
+            </v-col>
+
+        </v-col>
+    </v-row>
 
       <v-row>  <v-col class="d-flex px-8 py-8">
 
