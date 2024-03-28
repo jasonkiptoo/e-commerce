@@ -175,14 +175,33 @@
     <v-expand-transition>
       <div v-show="productOptions">
       <v-row>
-        <v-col class="d-fle px-8 py-8">
+        <v-col cols=6 class="d-fle px-8 p-8">
             <p>Option Name</p>
             <v-text-field label="name" variant="outlined"></v-text-field>
         </v-col>
-        
-    </v-row>
+        <v-col cols="6" class="d-fle px-8 ">
+            <p>Option Values</p>
+
+            <v-row  class="d-flex justify-center align-center">
+                <v-col cols="1" >
+
+                    <!-- align="center" justify="center"> -->
+      <v-col cols="auto">
+        <v-btn density="compact" icon="mdi-plus"></v-btn>
+      </v-col>
+                </v-col>
+                <v-col cols="8">
+
+<v-text-field label="value"  variant="outlined"></v-text-field>
+</v-col>
+<v-col cols="">
+        <v-btn density="compact" icon="mdi-plus"></v-btn>
+      </v-col>
+            </v-row>
+        </v-col>
   
-    <v-row class="">
+      </v-row>
+    <!-- <v-row class="">
         <v-col class="">
             <p>Option Values</p>
 
@@ -194,7 +213,7 @@
             </v-col>
 
         </v-col>
-    </v-row>
+    </v-row> -->
 
       <v-row>  <v-col class="d-flex px-8 py-8">
 
