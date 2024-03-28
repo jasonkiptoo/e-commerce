@@ -153,15 +153,60 @@
       <div v-show="optionSave">
       <v-row>
         <v-col class="d-flex px-8 py-8">
-            <p class="font-weight-black">Option</p>
+            <p class="font-weight-black">Options</p>
         </v-col>
+        
       </v-row>
 
+      <v-row>  <v-col class="d-flex px-8 py-8">
+        <v-checkbox
+            v-model="productOptions"
+            color="success"
+            label="Does this product have options like size and color"
+            value="success"
+            hide-details
+          ></v-checkbox>
+        </v-col>
+      </v-row>
       </div>
     </v-expand-transition>
 
+    <v-card>
+    <v-expand-transition>
+      <div v-show="productOptions">
+      <v-row>
+        <v-col class="d-fle px-8 py-8">
+            <p>Option Name</p>
+            <v-text-field label="name" variant="outlined"></v-text-field>
+        </v-col>
+        <v-col class="d-fle px-8 py-8">
+            <p>Option Size</p>
+            <v-text-field label="size" variant="outlined"></v-text-field>
+        </v-col>
+        
+      </v-row>
+
+      <v-row>  <v-col class="d-flex px-8 py-8">
+
+        product options
+        <!-- <v-checkbox
+            v-model="productOptions"
+            color="success"
+            label="Does this product have options like size and color"
+            value="success"
+            hide-details
+          ></v-checkbox> -->
+        </v-col>
+      </v-row>
+      </div>
+    </v-expand-transition>
+  </v-card>
+    
+
 
   </v-card>
+
+  
 
     </div>
    </div>
@@ -172,6 +217,7 @@ const productDetailsSave =ref(false)
 const show = ref(false)
 const inventorySave= ref(false)
 const optionSave= ref(true)
+const productOptions= ref(false)
 
 </script>
 
