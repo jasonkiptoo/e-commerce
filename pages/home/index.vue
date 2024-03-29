@@ -171,7 +171,7 @@
                             <v-row>
                                 <v-col cols=6 class="d-fle px-8 p-8">
                                     <p>Option Name</p>
-                                    <v-text-field label="name" variant="outlined"></v-text-field>
+                                    <v-text-field v-model="optionName" label="name" variant="outlined"></v-text-field>
                                 </v-col>
                                 <v-col cols="6" class="d-fle px-8 ">
                                     <p>Option Values</p>
@@ -184,15 +184,15 @@
                                         </v-col>
                                         <v-col cols="8">
 
-                                            <v-text-field label="value" variant="outlined"></v-text-field>
+                                            <v-text-field v-model="optionValue"  label="value" variant="outlined"></v-text-field>
                                         </v-col>
                                         <v-col cols="">
                                             <v-btn density="compact" icon="mdi-minus" @click="removeOption"></v-btn>
                                         </v-col>
                                     </v-row>
                                 </v-col>
-
                             </v-row>
+                            <v-btn @click="handleSubmit">Submit</v-btn>
                             <!-- <v-row class="">
         <v-col class="">
             <p>Option Values</p>
@@ -239,17 +239,22 @@ const show = ref(false)
 const inventorySave = ref(false)
 const optionSave = ref(true)
 const productOptions = ref(true)
-const optionsValues = ref(['sm', 'lg'])
+const optionsValues = ref([{name: ""}])
+const optionName= ref('')
+const optionValue =ref('')
 
 
 
 const addOption=()=>{
     console.log("add btn");
-    optionsValues.value.push('')
+    optionsValues.value.push({name: optionValue.value})
 }
 const removeOption=()=>{
     console.log("add btn");
     optionsValues.value.pop('')
+}
+const handleSubmit=()=>{
+    console.log(optionName.value, "jkfkjkjdkjdkf",  optionValue.value );
 }
 
 
