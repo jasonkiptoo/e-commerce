@@ -165,7 +165,7 @@
                     </div>
                 </v-expand-transition>
 
-                <!-- <v-card>
+                <v-card>
                     <v-expand-transition>
                         <div v-show="productOptions">
                             <v-row>
@@ -221,7 +221,7 @@
                             </v-row>
                         </div>
                     </v-expand-transition>
-                </v-card> -->
+                </v-card>
 
 
 
