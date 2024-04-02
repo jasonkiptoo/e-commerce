@@ -193,31 +193,11 @@
                                 </v-col>
                             </v-row>
                             <v-btn @click="handleSubmit">Submit</v-btn>
-                            <!-- <v-row class="">
-        <v-col class="">
-            <p>Option Values</p>
-
-            <v-col class="d-flex justify-center align-center">
-
-                <v-btn >add</v-btn>
-                <v-text-field label="size" variant="outlined"></v-text-field>
-                <v-btn>add</v-btn>
-            </v-col>
-
-        </v-col>
-    </v-row> -->
+                         
 
                             <v-row> <v-col class="d-flex px-8 py-8">
 
-                                    product options
-                                    <!-- <v-checkbox
-            v-model="productOptions"
-            color="success"
-            label="Does this product have options like size and color"
-            value="success"
-            hide-details
-          ></v-checkbox> -->
-                                </v-col>
+                                                            </v-col>
                             </v-row>
                         </div>
                     </v-expand-transition>
